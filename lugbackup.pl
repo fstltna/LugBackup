@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 # Set these for your situation
-my $HOST = "104.237.153.176"; # You need to run this script from this host also!
+my $HOST = "yourserver.com"; # You need to run this script from this host also!
 my $PORT = 41975;
 my $LUGDIR = "/root/lugdunon/dat";
 
