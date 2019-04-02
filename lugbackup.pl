@@ -1,13 +1,19 @@
 #!/usr/bin/perl
 
 # Set these for your situation
-my $HOST = "yourserver.com"; # You need to run this script from this host also!
+my $HOSTFILE = "/etc/hostname"; # The file that contains the FDN host name
 my $PORT = 41975;
 my $LUGDIR = "/root/lugdunon/dat";
 
 #-------------------
 # No changes below here...
 #-------------------
+
+# Read in host name
+open FILE, $HOSTFILE or die "Couldn't open file: $HOSTFILE";
+my $HOST = <FILE>;
+close FILE;
+chop($HOST);
 
 print "Moving existing backups: ";
 
