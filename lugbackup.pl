@@ -9,7 +9,7 @@ my $LUGDIR = "/root/lugdunon/dat";
 # No changes below here...
 #-------------------
 
-my $LUGBACKUP_Version = "1.0.0";
+my $LUGBACKUP_Version = "1.1.0";
 
 # Read in host name
 open FILE, $HOSTFILE or die "Couldn't open file: $HOSTFILE";
