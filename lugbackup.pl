@@ -9,12 +9,16 @@ my $LUGDIR = "/root/lugdunon/dat";
 # No changes below here...
 #-------------------
 
+my $LUGBACKUP_Version = "1.0.0";
+
 # Read in host name
 open FILE, $HOSTFILE or die "Couldn't open file: $HOSTFILE";
 my $HOST = <FILE>;
 close FILE;
 chop($HOST);
 
+print "LugBackup version $LUGBACKUP_VERSION\n";
+print "==========================\n";
 print "Moving existing backups: ";
 
 if (-f "$LUGDIR/lugbackup-5.lug")
