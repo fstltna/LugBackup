@@ -3,13 +3,13 @@
 # Set these for your situation
 my $HOSTFILE = "/etc/hostname"; # The file that contains the FDN host name
 my $PORT = 41975;
-my $LUGDIR = "/root/lugdunon/dat";
+my $LUGDIR = "/home/lugowner/lugdunon/dat";
 
 #-------------------
 # No changes below here...
 #-------------------
 
-my $LUGBACKUP_Version = "1.1.0";
+my $LUGBACKUP_Version = "1.2.0";
 
 # Read in host name
 open FILE, $HOSTFILE or die "Couldn't open file: $HOSTFILE";
